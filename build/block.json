@@ -1,0 +1,31 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "create-block/tabbed-content",
+  "version": "0.1.0",
+  "title": "Tabbed Content",
+  "category": "widgets",
+  "icon": "media-interactive",
+  "description": "An interactive block with the Interactivity API.",
+  "example": {},
+  "supports": {
+    "interactivity": true
+  },
+  "attributes": {
+    "tabs": {
+      "type": "array"
+    },
+    "tabsId": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    }
+  },
+  "textdomain": "tabbed-content",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php",
+  "viewScriptModule": "file:./view.js"
+}
